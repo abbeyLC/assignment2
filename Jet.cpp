@@ -3,7 +3,7 @@
 
 Jet::Jet() {
     setBrand("Custom");
-    setModel("VTx");
+    setModel("XXX");
 }
 
 Jet::Jet(string brand, string model, string fuelType, int numberOfEngines) {
@@ -23,18 +23,14 @@ void Jet::setNumberOfEngines(int numEngines) {
 	numberOfEngines = numEngines;
 }
 
-double Jet::mileageEstimate(double time) {
-	
-	
-	 /* initialize random seed: */
-	//srand (time(0));
+double Jet::mileageEstimate(double t) {
 
 	/* generate secret number between 1 and 10: */
-	double mileage = rand() % 100 + 40;
-	
+	double mileage = (rand() % 100 + 40) * t;
+
 	if (numberOfEngines > 2 && fuelType == "Rocket")
 		mileage += mileage * (numberOfEngines * 0.055);
-	
+
     return mileage;
 }
 

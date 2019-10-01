@@ -1,4 +1,7 @@
 #include <iostream>
+#include <stdio.h>      /* printf, scanf, puts, NULL */
+//#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 #include "Car.h"
 #include "Bicycle.h"
 #include "Jet.h"
@@ -6,6 +9,10 @@
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
+	
+	/* initialize random seed: */
+	srand (time(0));
+	
     std::cout << "Driving simulator" << std::endl;
     int size = 8;
     int capacity = 12;
@@ -18,7 +25,7 @@ int main() {
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
     vehiclesArray[6] = new Jet("Airbus", "YYY", "diesel", 2);
-    vehiclesArray[7] = new Jet("Hawker", "ZZZ", "diesel", 4);
+    vehiclesArray[7] = new Jet("Hawker", "ZZZ", "Rocket", 4);
 
     printVehiclesRoster(vehiclesArray, size);
 

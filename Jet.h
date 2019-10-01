@@ -6,7 +6,8 @@
 #include "PoweredVehicle.h"
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
-#include <time.h>       /* time */
+//#include <time.h>     /* time */
+
 
 class Jet : public PoweredVehicle {
 
@@ -22,7 +23,7 @@ public:
     virtual ~Jet();
     int getNumberOfEngines();
     void setNumberOfEngines(int numEngines);
-    virtual double mileageEstimate(double time);
+    virtual double mileageEstimate(double t);
     virtual string toString();
 };
 
