@@ -6,6 +6,7 @@
 #include "PoweredVehicle.h"
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
+#include <cmath>
 //#include <time.h>     /* time */
 
 
