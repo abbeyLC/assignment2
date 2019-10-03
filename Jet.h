@@ -7,8 +7,6 @@
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
 #include <cmath>
-//#include <time.h>     /* time */
-
 
 class Jet : public PoweredVehicle {
 

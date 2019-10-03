@@ -5,6 +5,7 @@
 #include "Car.h"
 #include "Bicycle.h"
 #include "Jet.h"
+#include "Skateboard.h"
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
@@ -14,7 +15,7 @@ int main() {
 	srand (time(0));
 	
     std::cout << "Driving simulator" << std::endl;
-    int size = 8;
+    int size = 10;
     int capacity = 12;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
@@ -26,6 +27,9 @@ int main() {
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
     vehiclesArray[6] = new Jet("Airbus", "YYY", "diesel", 2);
     vehiclesArray[7] = new Jet("Hawker", "ZZZ", "Rocket", 4);
+	vehiclesArray[8] = new Skateboard("R&A", "Dogma F8");
+	vehiclesArray[9] = new Skateboard("R&A", "Dogma F8");
+
 
     printVehiclesRoster(vehiclesArray, size);
 
@@ -45,6 +49,6 @@ void printVehiclesRoster(Vehicle **vehicles, int size) {
         cout << i << " " << vehicles[i]->toString() << endl;
         cout << "\tWould travel: "
              << vehicles[i]->mileageEstimate(simulatedDistance) << " miles in "
-             << simulatedDistance << " seconds" << endl;
+             << simulatedDistance << " minutes" << endl;
     }
 }

@@ -1,2 +1,2 @@
-main: main.cpp Jet.h Jet.cpp Bicycle.h Bicycle.cpp Car.h Car.cpp PoweredVehicle.h PoweredVehicle.cpp Vehicle.h Vehicle.cpp
-	g++ -std=c++11 -Wall -g -o main main.cpp Jet.cpp Bicycle.cpp Car.cpp PoweredVehicle.cpp Vehicle.cpp -I.
+main: main.cpp Skateboard.h Skateboard.cpp Jet.h Jet.cpp Bicycle.h Bicycle.cpp Car.h Car.cpp PoweredVehicle.h PoweredVehicle.cpp Vehicle.h Vehicle.cpp
+	g++ -std=c++11 -Wall -g -o main main.cpp Skateboard.cpp Jet.cpp Bicycle.cpp Car.cpp PoweredVehicle.cpp Vehicle.cpp -I.
