@@ -1,11 +1,11 @@
 #include <iostream>
 #include <stdio.h>      /* printf, scanf, puts, NULL */
-//#include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 #include "Car.h"
 #include "Bicycle.h"
 #include "Jet.h"
 #include "Skateboard.h"
+#include "Boat.h"
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 
@@ -15,7 +15,7 @@ int main() {
 	srand (time(0));
 	
     std::cout << "Driving simulator" << std::endl;
-    int size = 10;
+    int size = 12;
     int capacity = 12;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
@@ -29,6 +29,8 @@ int main() {
     vehiclesArray[7] = new Jet("Hawker", "ZZZ", "Rocket", 4);
 	vehiclesArray[8] = new Skateboard("R&A", "Dogma F8");
 	vehiclesArray[9] = new Skateboard("R&A", "Dogma F8");
+	vehiclesArray[10] = new Boat("Bertram", "360 Moppie", "diessel", 1, 14000);
+	vehiclesArray[11] = new Boat("Boston Whaler", "420 Outrage", "diessel", 2, 24000);
 
 
     printVehiclesRoster(vehiclesArray, size);
