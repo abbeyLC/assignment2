@@ -72,7 +72,7 @@ double Boat::mileageEstimate(double t)
 	*/
 
 	// if small waves and light boat -- faster
-	if (waveHeight =< 50 && weight <= 10000)
+	if (waveHeight <= 50 && weight <= 10000)
 	{
 		// add random percentage of mileage between 50 and 100 to simulate that the boat can go
 		//		faster in these conditions
