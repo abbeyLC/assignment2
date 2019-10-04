@@ -1,68 +1,70 @@
-(a)
-	Enumerating objects: 9, done.
-	Counting objects: 100% (9/9), done.
-	Delta compression using up to 4 threads
-	Compressing objects: 100% (5/5), done.
-	Writing objects: 100% (7/7), 748 bytes | 249.00 KiB/s, done.
-	Total 7 (delta 2), reused 0 (delta 0)
-	remote: Resolving deltas: 100% (2/2), completed with 1 local object.
-	To https://github.com/abbeyLC/assignment2.git
-	   f4975e5..ca316a0  master -> master
+4)
+	E)
+	(a)
+		Enumerating objects: 9, done.
+		Counting objects: 100% (9/9), done.
+		Delta compression using up to 4 threads
+		Compressing objects: 100% (5/5), done.
+		Writing objects: 100% (7/7), 748 bytes | 249.00 KiB/s, done.
+		Total 7 (delta 2), reused 0 (delta 0)
+		remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+		To https://github.com/abbeyLC/assignment2.git
+		   f4975e5..ca316a0  master -> master
 
-(b) 9 commits
-	git rev-list --count HEAD
-	
-(c)	The .gitignore file was last modified on 2019-09-25 18:13:30
-	This information was obtained with the following git command: git log -1 --pretty="format:%ci" .gitignore
-	
-(d)
-	(i) Branches ensure that your code changes are verified before they are delivered to the other developers.
-	(ii) Branches isolate development activities among the team (e.g. branches for new features vs branches for bug fixes).
-	
-(e)	git log allow you to view information about the last commits made to a repository.
-	git status will simply display the status of the working tree.
-	
-(f)	git log -- Vehicle.h
-	
-(g) git log --grep="file"
+	(b) 9 commits
+		git rev-list --count HEAD
+		
+	(c)	The .gitignore file was last modified on 2019-09-25 18:13:30
+		This information was obtained with the following git command: git log -1 --pretty="format:%ci" .gitignore
+		
+	(d)
+		(i) Branches ensure that your code changes are verified before they are delivered to the other developers.
+		(ii) Branches isolate development activities among the team (e.g. branches for new features vs branches for bug fixes).
+		
+	(e)	git log allow you to view information about the last commits made to a repository.
+		git status will simply display the status of the working tree.
+		
+	(f)	git log -- Vehicle.h
+		
+	(g) git log --grep="file"
 
-(h)	
-	(I) "Inheritance allows a new class to be based on an existing class. The new class inherits all the member
-		variables and functions (except the constructors and destructor) of the class it is based on."
+	(h)	
+		(I) Inheritance allows a new class to be based on an existing class. The new class inherits all the member
+			variables and functions (except the constructors and destructor) of the class it is based on.
 
-	(II) "Polymorphism allows an object reference variable or an object pointer to reference objects of different 
-		types, and to call the correct member functions, depending upon the type of the object being referenced."
-	
-	(III) "OOP addresses the problems that can result from the separation of code and data through encapsulation
-		and data hiding. Encapsulation refers to the combining of data and code into a single object."
+		(II) Polymorphism allows an object reference variable or an object pointer to reference objects of different 
+			types, and to call the correct member functions, depending upon the type of the object being referenced.
+		
+		(III) OOP addresses the problems that can result from the separation of code and data through encapsulation
+			and data hiding. Encapsulation refers to the combining of data and code into a single object.
 
-	Source -- Starting Out with C++: From control Structures through Objects, 7th Edition, by Tony Gaddis
-	
-(i)	In the integration manager workflow, project developers push and pull from their (personal) public repo. Developers
-	cannot push to the central repo, they can only pull. Additionally, integration conflict resolution is handled by the 
-	integration	manager.
-	
-	In the dictator and lieutenants workflow, there is another level of management where integration conflicts are resolved.
-	This level is for the "lieutenants," who are each in charge of a different section of the repo. Lieutenants are responsible 
-	for merging the developers' topic branches into their master branch. The dictator then merges the lieutenants' master 
-	branches into the dictator's master branch. 
+		Source -- Starting Out with C++: From control Structures through Objects, 7th Edition, by Tony Gaddis
+		
+	(i)	In the integration manager workflow, project developers push and pull from their (personal) public repo. Developers
+		cannot push to the central repo, they can only pull. Additionally, integration conflict resolution is handled by the 
+		integration	manager.
+		
+		In the dictator and lieutenants workflow, there is another level of management where integration conflicts are resolved.
+		This level is for the "lieutenants," who are each in charge of a different section of the repo. Lieutenants are responsible 
+		for merging the developers' topic branches into their master branch. The dictator then merges the lieutenants' master 
+		branches into the dictator's master branch. 
 
-	Source (in addition to the pdf provided on canvas): https://git-scm.com/book/en/v1/Distributed-Git-Distributed-Workflows
+		Source (in addition to the pdf provided on canvas): https://git-scm.com/book/en/v1/Distributed-Git-Distributed-Workflows
 
-(j) The dictator and lieutenants workflow is more suited to large projects (with many contributers) than the centralized workflow 
-	becauses it divides/organizes a single repository into multiple parts, each with a different integration manager/lieutenant.
-	Each integration manager is responsible for merging changes for the developers working on that particular section of the repo.
-	This allows the dictator to delegate a large portion of the conflict resolution work to the lieutenants.
-	
-	The centralized workflow is not suited for a large number of contributors because everyone must syncrhonize to the central hub.
-	This would make it extremely difficult for users keep track of the latest versions and merge their changes with those made by 
-	the other collaborators.
-
-
-
-
+	(j) The dictator and lieutenants workflow is more suited to large projects (with many contributers) than the centralized workflow 
+		becauses it divides/organizes a single repository into multiple parts, each with a different integration manager/lieutenant.
+		Each integration manager is responsible for merging changes for the developers working on that particular section of the repo.
+		This allows the dictator to delegate a large portion of the conflict resolution work to the lieutenants.
+		
+		The centralized workflow is not suited for a large number of contributors because everyone must syncrhonize to the central hub.
+		This would make it extremely difficult for users keep track of the latest versions and merge their changes with those made by 
+		the other collaborators.
 
 
+
+
+
+5)
 
 
 
