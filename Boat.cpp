@@ -67,7 +67,6 @@ double Boat::mileageEstimate(double t)
 	//	of the boat and the height of the waves
 	double r;
 
-
 	/* if statements simulate the following:
 		- light boats will likely travel faster in small waves
 		- light boats will likely travel slower in big waves
@@ -105,7 +104,7 @@ double Boat::mileageEstimate(double t)
 		mileage += (r/100.0)*mileage;
 	}
 
-	return mileage;
+	return floor(mileage);
 
 }
 

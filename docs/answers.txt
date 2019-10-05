@@ -12,26 +12,26 @@
 			   f4975e5..ca316a0  master -> master
 
 		(b) 9 commits
-			git rev-list --count HEAD
-			
+			git rev-list --all --count	
+		
 		(c)	The .gitignore file was last modified on 2019-09-25 18:13:30
-			This information was obtained with the following git command: git log -1 --pretty="format:%ci" .gitignore
+			This information was obtained with the following git command: git log -1 .gitignore
 			
 		(d)
 			(i) Branches ensure that your code changes are verified before they are delivered to the other developers.
-			(ii) Branches isolate development activities among the team (e.g. branches for new features vs branches for bug fixes).
+			(ii) Branches isolate development activities among the team (e.g. branches for new features vs. branches for bug fixes).
 			
 		(e)	git log allow you to view information about the last commits made to a repository.
-			git status will simply display the status of the working tree.
+			git status will simply display the status of the working tree, such as the files modified since the last commit.
 			
 		(f)	git log -- Vehicle.h
 			
 		(g) git log --grep="file"
 
 		(h)	
-			(I) Inheritance allows a new class to be based on an existing class. The new class inherits all the member
-				variables and functions (except the constructors and destructor) of the class it is based on and often
-				builds off of that member data to create a new type with additional features.
+			(I) Inheritance allows a new class to be based on an existing class. The new class inherits the member
+				variables and functions of the class it is based usually builds off of that member data to create 
+				a new type with additional member variables and functions.
 
 			(II) Polymorphism allows an object reference variable or an object pointer to reference objects of different 
 				types, and to call the correct member functions, depending upon the type of the object being referenced.
@@ -39,7 +39,7 @@
 			(III) OOP addresses the problems that can result from the separation of code and data through encapsulation
 				and data hiding. Encapsulation refers to the combining of data and code into a single object.
 
-			Source -- Starting Out with C++: From control Structures through Objects, 7th Edition, by Tony Gaddis
+			Definitions obtained from the following source -- Starting Out with C++: From control Structures through Objects, 7th Edition, by Tony Gaddis
 			
 		(i)	In the integration manager work flow, project developers push and pull from their (personal) public repository. Developers
 			cannot push to the central repository, they can only pull. Additionally, integration conflict resolution is handled by the 
@@ -68,14 +68,14 @@
 	encapsulation to combine the member data and member functions of each vehicle into a single class.
 
 	Run time polymorphism is evident in the driving simulator through function overriding, which "occurs when a derived class has a definition 
-	for one of the member functions of the base class." That function is said to be overridden. So, if a pointer of type Parent points to the 
-	address space of an object that inherits from that parent, then a call to the overridden function from that pointer will call the function
-	definition located in the child class. 
+	for one of the member functions of the base class." That function is said to be overridden. For example, if the class Child inherits the 
+	Parent class, and a pointer of type Parent points to an object of type Child, a call to the overridden function from that pointer will call 
+	the function definition located in the Child class. 
 
 	For example, the mileageEstimate and toString functions are overridden in the Vehicle class because they are declared with the "virtual" keyword. 
-	This is why it is possible to create an array of Vehicle pointers and get a different output when the toString function on each. This is because
-	each Vehicle pointer points to a different object type that inherits the member data and functions of the Vehicle class, but overrides the 
-	mileageEstimate and toString functions with their own definitions. 
+	This is why it is possible to create an array of Vehicle pointers and get a different output when the toString function is called on each array
+	element. This is because each Vehicle pointer points to a different object type that inherits the member data and functions of the Vehicle class, 
+	but overrides the mileageEstimate and toString functions with their own definitions. 
 
 	Source: https://www.geeksforgeeks.org/polymorphism-in-c/
 

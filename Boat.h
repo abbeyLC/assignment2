@@ -3,7 +3,7 @@
 
 #include <stdlib.h>     // srand, rand 
 #include "PoweredVehicle.h"
-#include <stdio.h>
+#include <cmath>
 
 // the boat class inherits from PoweredVehicle to accommodate power operated boats
 // assume that a boat that does not require power (ex. rowboat) can be represented 
