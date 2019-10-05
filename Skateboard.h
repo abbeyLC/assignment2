@@ -3,17 +3,21 @@
 #define DRIVINGSIMULATOR_SKATEBOARD_H
 
 #include "Vehicle.h"
-#include <stdio.h>      /* printf, scanf, puts, NULL */
-#include <stdlib.h>     /* srand, rand */
+#include <stdlib.h>    // srand, rand
 #include <cmath>
 
 class Skateboard : public Vehicle {
+	
+	// skateboard platform length in inches
+	int platFormLength;
 
 public:
-    explicit Skateboard(string brand, string model);
+    explicit Skateboard(string brand, string model, int platFormLength = 24);
     virtual ~Skateboard();
     virtual double mileageEstimate(double t);
     virtual string toString();
+	int getPlatFormLength();
+	void setPlatFormLength(int p);
 };
 
 

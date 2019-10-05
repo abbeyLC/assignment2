@@ -1,18 +1,19 @@
 #ifndef DRIVINGSIMULATOR_BOAT_H
 #define DRIVINGSIMULATOR_BOAT_H
 
-#include <stdlib.h>     /* srand, rand */
+#include <stdlib.h>     // srand, rand 
 #include "PoweredVehicle.h"
+#include <stdio.h>
 
-// the boat class inherits from PoweredVehicle to accomodate power operated boats
-// assume that a boat that does not require power (ex. rowboat, canoe, etc.) can
-// be represented by passing "unknown" to the fuelType member data
+// the boat class inherits from PoweredVehicle to accommodate power operated boats
+// assume that a boat that does not require power (ex. rowboat) can be represented 
+// by passing "unknown" to the fuelType member data type
 
 
 class Boat : public PoweredVehicle {
 
 private:
-	// to store the number of decks on a Boat boat
+	// to store the number of decks on a boat
     int numberOfDecks;
 	
 	// weight of the boat in lbs
@@ -35,10 +36,10 @@ public:
 	// set the number of decks
     void setNumDecks(int nDecks);
 	
-	// return the number of decks
+	// return the weight
     int getWeight();
 	
-	// set the number of decks
+	// set the weight
     void setWeight(int w);
 	
 	// estimate and return mileage
@@ -49,4 +50,4 @@ public:
 };
 
 
-#endif //DRIVINGSIMULATOR_Boat_H
+#endif //DRIVINGSIMULATOR_BOAT_H

@@ -2,12 +2,14 @@
 
 #include "Skateboard.h"
 
-
-Skateboard::Skateboard(string brand, string model) {
+// constructor
+Skateboard::Skateboard(string brand, string model, int platFormLength) {
     setBrand(brand);
     setModel(model);
+	setPlatFormLength(platFormLength);
 }
 
+// destructor
 Skateboard::~Skateboard() = default;
 
 double Skateboard::mileageEstimate(double t) {
@@ -33,7 +35,29 @@ double Skateboard::mileageEstimate(double t) {
     return mileage;
 }
 
+
+int Skateboard::getPlatFormLength()
+{
+	return platFormLength;
+}
+
+void Skateboard::setPlatFormLength(int p)
+{
+	platFormLength = p;
+}
+
 string Skateboard::toString() {
     string s = "-> Skateboard\n\t";
     return "-> Skateboard\n" + Vehicle::toString();
 }
+
+
+
+
+
+
+
+
+
+
+
