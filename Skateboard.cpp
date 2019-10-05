@@ -48,7 +48,7 @@ void Skateboard::setPlatFormLength(int p)
 
 string Skateboard::toString() {
     string s = "-> Skateboard\n\t";
-    return "-> Skateboard\n" + Vehicle::toString();
+    return "-> Skateboard\n" + Vehicle::toString() + "\n\tPlat form length: " + to_string(platFormLength) + " inches";
 }
 
 

@@ -111,7 +111,7 @@ double Boat::mileageEstimate(double t)
 // used to output details of the Boat boat
 string Boat::toString()
 {
-    return "-> Boat\n" + PoweredVehicle::toString() + "\n\tWeight: " + to_string(weight) + 
+    return "-> Boat\n" + PoweredVehicle::toString() + "\n\tWeight: " + to_string(weight) + " lbs" + 
 			"\n\tNumber of decks: " + to_string(getNumDecks());
 }
 
